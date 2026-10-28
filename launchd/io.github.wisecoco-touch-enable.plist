@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  LaunchAgent template for wisecoco-touch-enable.
+  install.sh replaces __BIN__ and __HOME__ and copies the result to
+  ~/Library/LaunchAgents/io.github.wisecoco-touch-enable.plist
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>io.github.wisecoco-touch-enable</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>__BIN__</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>__HOME__/Library/Logs/wisecoco-touch-enable.log</string>
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Logs/wisecoco-touch-enable.log</string>
+</dict>
+</plist>
